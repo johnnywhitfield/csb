@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150325225959) do
+ActiveRecord::Schema.define(version: 20150326005342) do
 
   create_table "categories", force: :cascade do |t|
     t.integer  "review_id"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20150325225959) do
     t.string   "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.integer  "rating"
   end
 
   add_index "categories", ["company_id"], name: "index_categories_on_company_id"
@@ -39,6 +40,7 @@ ActiveRecord::Schema.define(version: 20150325225959) do
     t.integer  "overall"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "rating"
   end
 
   add_index "reviews", ["company_id"], name: "index_reviews_on_company_id"
