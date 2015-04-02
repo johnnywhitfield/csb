@@ -8,22 +8,24 @@
 
 <body>
 
-<h1 class="logo">
+<h1 id="logo">
 	<img src="http://johnnywhitfield.com/wp-content/uploads/2011/04/csb_logo.png" />
 </h1>
 
 <h1>Welcome to CSB</h1>
 <p>Transparency + Accountability + Competition = A Better World.</p>
 
-
+<div class="container-fluid">
 <%= link_to 'Companies', companies_path, class: "comps btn btn-default btn-sm col-md-2" %>
 <%= link_to 'Reviews', reviews_path, class: "revs btn btn-default btn-sm col-md-2" %>
 <%= link_to 'Categories', categories_path, class: "cats btn btn-default btn-sm col-md-2" %>
 <%= link_to 'New User', new_user_path, class: "u5er btn btn-default btn-sm col-md-2" %>
-
+</div>
 <br>
 <br>
 <p>Thanks for visiting the page. One Love.</p>
+<p>This page built by <a href="http://johnnywhitfield.com/" target="_blank">Johnny Whitfield</a>
+</p>
 
 </body>
 
